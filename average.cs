@@ -17,7 +17,7 @@ class Program
     }
     static double Calculate(int[] numbers)
     {
-        if (numbers == null || numbers.Length == 0)
+        if (number == null || numbers.Length == 0)
         {
             throw new ArgumentException("Array is empty or null. Cannot calculate average.");
         }
