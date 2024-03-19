@@ -15,7 +15,7 @@ class Program
             Console.WriteLine("An error occurred: " + ex.Message);
         }
     }
-    static double Calculate(int[] numbers)
+    static double CalculateAverage(int[] numbers)
     {
         if (numbers == null || numbers.Length == 0)
         {
