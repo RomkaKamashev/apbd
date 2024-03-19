@@ -7,7 +7,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("s28349");
+            Console.WriteLine("i forgot mod.2");
         }
     }
 }
