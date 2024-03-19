@@ -4,10 +4,10 @@ class Program
 {
     static void Main()
     {
-        int[] numbers = { 1, 2, 3, 4, 5 };
+        int[] number = { 1, 2, 3, 4, 5 };
         try
         {
-            double average = CalculateAverage(numbers);
+            double average = CalculateAver(number);
             Console.WriteLine("Average: " + average);
         }
         catch (Exception ex)
@@ -15,19 +15,19 @@ class Program
             Console.WriteLine("An error occurred: " + ex.Message);
         }
     }
-    static double Calculate(int[] numbers)
+    static double CalculateAver(int[] number)
     {
-        if (number == null || numbers.Length == 0)
+        if (number == null || number.Length == 0)
         {
             throw new ArgumentException("Array is empty or null. Cannot calculate average.");
         }
 
         int sum = 0;
-        for (int i = 0; i < numbers.Length; i++)
+        for (int i = 0; i < number.Length; i++)
         {
-            sum += numbers[i];
+            sum += number[i];
         }
 
-        return (double)sum / numbers.Length;
+        return (double)sum / number.Length;
     }
 }
